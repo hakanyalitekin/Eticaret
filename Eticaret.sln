@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eticaret.MVCWebUI", "Eticaret.MVCWebUI\Eticaret.MVCWebUI.csproj", "{A61D0B8F-6F0D-44AF-A6BF-2EF5D8F801F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eticaret.MvcWebUI", "Eticaret.MVCWebUI\Eticaret.MvcWebUI.csproj", "{A61D0B8F-6F0D-44AF-A6BF-2EF5D8F801F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
