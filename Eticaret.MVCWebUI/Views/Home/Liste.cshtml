@@ -1,0 +1,43 @@
+﻿@using Eticaret.MVCWebUI.Entity;
+@model IEnumerable<Urun>
+@{
+    ViewBag.Title = "Liste";
+}
+
+<div class="row  mt-3">
+    <div class="col-md-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                Cras justo odio
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="row">
+            @foreach (var urun in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100px180/" alt="@urun.Ad">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/Home/Detay/@urun.Id">@urun.Ad</a>
+                            </h5>
+                            <p class="card-text">@urun.Aciklama</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">@urun.Fiyat</small>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+</div>

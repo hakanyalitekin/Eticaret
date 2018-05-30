@@ -1,0 +1,102 @@
+﻿@using Eticaret.MVCWebUI.Entity;
+@model Urun 
+@{
+    ViewBag.Title = "Detay";
+}
+
+<div class="row  mt-3">
+
+    <div class="col-md-6">
+        <img src="~/theme/img/urunler/kamera.jpg" class="img-fluid rounded" alt="">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>@Model.Ad</h1>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <span class="badge badge-warning">Stokta!</span>
+                <span class="urun-no">#223112</span>
+           
+                </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <div id="aciklama">
+                    @Model.Aciklama
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-4">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <span class="badge badge-success">42</span>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h4 id="urun-fiyat" class="text-danger">@Model.Fiyat ₺</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+
+                <button class="btn btn-success">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    Sepete Ekle
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="aciklama-tab" data-toggle="tab" href="#aciklama" role="tab" aria-controls="aciklama" aria-selected="true">Açıklama</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="odeme-tab" data-toggle="tab" href="#odeme" role="tab" aria-controls="odeme" aria-selected="false">Ödeme Yöntemleri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="yorum-tab" data-toggle="tab" href="#yorum" role="tab" aria-controls="yorum" aria-selected="false">Yorum</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="aciklama" role="tabpanel" aria-labelledby="aciklama-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident reiciendis perspiciatis vero sunt, explicabo,
+                totam reprehenderit accusamus debitis, corporis voluptatibus. Iusto perferendis optio autem iure
+                facere qui iste quos.Sint libero fugiat quibusdam. Deserunt eligendi saepe asperiores sunt in neque
+                mollitia possimus, quae molestiae officiis facilis quidem maxime laboriosam repellat odit! Suscipit
+                veritatis deserunt autem atque recusandae omnis tempore?
+            </div>
+            <div class="tab-pane fade" id="odeme" role="tabpanel" aria-labelledby="odeme-tab">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio facere, beatae consequuntur ea tenetur quas exercitationem
+                excepturi voluptatum recusandae neque veniam voluptatibus sapiente, quis natus ipsam. Asperiores
+                sed obcaecati facilis!Iusto expedita autem, explicabo deserunt odit aspernatur repellendus quia et
+                illum aut nesciunt minus nostrum veniam eaque molestiae tempore doloribus, corporis placeat. Ipsa
+                aperiam vel sint soluta velit, atque commodi.
+                illum aut nesciunt minus nostrum veniam eaque molestiae tempore doloribus, corporis placeat. Ipsa
+                aperiam vel sint soluta velit, atque commodi.
+            </div>
+            <div class="tab-pane fade" id="yorum" role="tabpanel" aria-labelledby="yorum-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, temporibus eaque. Velit reiciendis, qui aliquid odit, quas
+                voluptatum dolores quod nobis animi recusandae possimus incidunt fugiat eaque sapiente pariatur officia!Odit
+                quia, architecto eveniet minima fuga quae blanditiis commodi ducimus voluptatibus sit, in, dolor
+                enim cupiditate perferendis sunt corporis rem eum minus? Delectus nostrum corrupti aut enim architecto
+                incidunt consectetur.
+                enim cupiditate perferendis sunt corporis rem eum minus? Delectus nostrum corrupti aut enim architecto
+                incidunt consectetur.
+            </div>
+        </div>
+    </div>
+</div>
